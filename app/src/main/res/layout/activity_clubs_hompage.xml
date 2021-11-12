@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ubs2"
+
+    tools:context=".ClubsHomepage">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+
+        >
+        <TextView
+            android:id="@+id/ClubsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/ubsblue"
+            android:gravity="center"
+
+            android:text="Clubs Homepage"
+
+            android:textColor="@android:color/white"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+
+            app:layout_constraintBottom_toTopOf="@id/YourClubsRecyclerView"
+
+            app:layout_constraintVertical_chainStyle="packed"
+
+            />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/CreateClubButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="50dp"
+            android:background="#68C59D"
+
+            android:text="Create Club" />
+
+        <Button
+            android:id="@+id/FindClubButton"
+            android:layout_width="150dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:background="#68C59D"
+            android:text="Find Club"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </TableRow>
+
+  <TableRow
+      android:background="@color/ubsblue"
+      android:layout_width="match_parent"
+      android:layout_gravity="center"
+      android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/YourClubsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:background="@color/ubsblue"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+
+        android:text="View Your Clubs"
+
+        android:textColor="@android:color/white"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintBottom_toTopOf="@id/YourClubsRecyclerView"
+
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+  </TableRow>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/YourClubsRecyclerView"
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+</LinearLayout>

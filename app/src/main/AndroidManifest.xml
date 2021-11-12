@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ubsandroidapplication">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UBSAndroidApplication">
+        <activity android:name=".CommunicationView"></activity>
+        <!--
+        <activity android:name=".buyItems" />
+        <activity android:name=".buyshipping" />
+        -->
+        <activity
+            android:name=".ClubsCreateClub"
+            android:label="UBS Clubs" />
+        <activity
+            android:name=".ClubsFindClubs"
+            android:label="UBS Clubs" />
+        <activity
+            android:name=".ClubsHomepage"
+            android:label="UBS Clubs" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".RegistrationPage"
+            android:label="UBS Registration" />
+        <activity
+            android:name=".RegistrationSetSecurityQuestions"
+            android:label="UBS Registration" />
+        <activity
+            android:name=".LoginPage"
+            android:label="UBS Login" />
+        <activity
+            android:name=".LoginForgotPassword"
+            android:label="UBS Forgot Password" />
+        <activity
+            android:name=".LoginResetPassword"
+            android:label="UBS Forgot Password" />
+        <activity
+            android:name=".LoginResetSecurityQuestions"
+            android:label="UBS Forgot Password" />
+        <activity
+            android:name=".ExchangeHomeFrag"
+            android:label="Exchange Home Page" />
+        <activity
+            android:name=".ExchangeEditFrag"
+            android:label="Exchange Edit Page" />
+        <activity
+            android:name=".ExchangeCreateFrag"
+            android:label="Exchange Create Page" />
+        <activity
+            android:name=".Search"
+            android:label="Search Exchange"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+        <activity
+            android:name=".SearchChoice"
+            android:label="Search Home page" />
+        <activity
+            android:name=".SearchClubs"
+            android:label="Search Clubs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchSales"
+            android:label="SearchSales "
+            android:theme="@style/AppTheme.NoActionBar" />
+
+                <uses-library
+                    android:name="com.google.android.wearable"
+                    android:required="true" />
+                       Set to true if your app is Standalone, that is, it does not require the handheld
+                       app to run.
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+        -->
+        <activity
+            android:name=".UbsStart"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
