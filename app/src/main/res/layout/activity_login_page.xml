@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@drawable/ubs2"
+
+    tools:context=".LoginPage">
+
+
+
+    <TextView
+        android:id="@+id/LoginUBSTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="University Bazzar System"
+        android:textColor="@color/ubstext"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/LoginEmailTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/LoginEmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="70dp"
+        android:textColor="@color/ubstext"
+        android:text="Email"
+
+
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/LoginEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/LoginUBSTitle"
+
+        />
+
+
+    <EditText
+        android:id="@+id/LoginEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="45dp"
+        android:hint="Enter Email"
+
+        app:layout_constraintBottom_toTopOf="@+id/LoginPassTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginEmailTitle" />
+
+    <TextView
+        android:id="@+id/LoginPassTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ubstext"
+
+        android:layout_marginBottom="20dp"
+        android:text="Password"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/LoginPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginEmail" />
+
+    <EditText
+        android:id="@+id/LoginPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:password="true"
+
+        android:hint="Enter Password"
+        app:layout_constraintBottom_toTopOf="@+id/LoginButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPassTitle"
+
+        />
+
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="35dp"
+        android:text="Login"
+
+        app:layout_constraintBottom_toTopOf="@id/LoginForgotPasswordButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPassword"
+
+        />
+
+
+    <Button
+        android:id="@+id/LoginForgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Forgot Password?"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
